@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2016 eneim@Eneim Labs, nam@ene.im
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:showIn="@layout/activity_main"
+    >
+
+  <Space
+      android:id="@+id/divider"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:layout_centerInParent="true"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/divider"
+      android:orientation="horizontal"
+      >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+      <LinearLayout
+          android:id="@+id/day_container"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="@dimen/activity_vertical_margin"
+          >
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/day_container"
+          android:layout_alignRight="@id/day_container"
+          android:layout_below="@id/day_container"
+          android:gravity="center"
+          android:text="Days"
+          android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+      <LinearLayout
+          android:id="@+id/hour_container"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="@dimen/activity_vertical_margin"
+          >
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/hour_container"
+          android:layout_alignRight="@id/hour_container"
+          android:layout_below="@id/hour_container"
+          android:gravity="center"
+          android:text="Hours"
+          android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+          />
+    </RelativeLayout>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/divider"
+      android:orientation="horizontal"
+      >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+      <LinearLayout
+          android:id="@+id/minute_container"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="@dimen/activity_vertical_margin"
+          >
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/minute_container"
+          android:layout_alignRight="@id/minute_container"
+          android:layout_below="@id/minute_container"
+          android:gravity="center"
+          android:text="Minutes"
+          android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+      <LinearLayout
+          android:id="@+id/second_container"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:orientation="horizontal"
+          android:padding="@dimen/activity_vertical_margin"
+          >
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+
+        <im.ene.lab.io_timer.ui.widget.GoogleIO2016NumberView
+            android:id="@+id/digit_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_4dp"
+            app:size="@dimen/default_number_size"
+            app:value="zero"
+            />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@id/second_container"
+          android:layout_alignRight="@id/second_container"
+          android:layout_below="@id/second_container"
+          android:gravity="center"
+          android:text="Seconds"
+          android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+          />
+    </RelativeLayout>
+  </LinearLayout>
+</RelativeLayout>
