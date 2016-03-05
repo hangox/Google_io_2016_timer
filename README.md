@@ -11,8 +11,17 @@ Google IO 2016 Countdown App.
 ## Use this code base, contribute
 
 - Rename ```gradle.properties-sample``` to ```gradle.properties```.
-- Change requested value to your own.
-- Commit
+- Change requested value to your own (fabric key, keystore values).
+- Pull request.
+
+## Used libraries
+
+- AppCompat 23.2.0
+- [ThreeTenABP](https://github.com/JakeWharton/ThreeTenABP)
+- [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+- [butterknife](jakewharton.github.io/butterknife/)
+- [vectalign](https://github.com/bonnyfone/vectalign)
+- [svgtoandroid](https://codecrafted.net/svgtoandroid)
 
 ## LICENSE
 
