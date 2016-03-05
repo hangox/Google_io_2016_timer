@@ -2,6 +2,14 @@
 
 Google IO 2016 Countdown App.
 
+## TL, DR
+
+> See [events.google.com/io2016](events.google.com/io2016)
+
+Downloadable from here
+
+<a href=""><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="200px"/></a>
+
 <img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/web_hi_res_512.png?token=ABsaZkzdX0XlNAYS0w9QCjVoVkIY4zr8ks5W5ETbwA%3D%3D" width="256">
 
 ## IO When in action
