@@ -12,6 +12,10 @@ Downloadable from here
 
 <a href=""><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="200px"/></a>
 
+Donateable from here
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GEQ9RVMLB79MA)
+
 ## IO When in action
 
 <img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/screen_record.gif?token=ABsaZq7z-Y88972vpgS6YKK-2J2rsFjtks5W5El9wA%3D%3D" width="320">
