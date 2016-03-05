@@ -113,6 +113,18 @@ public class MainActivity extends AppCompatActivity {
           mSetting.setAlpha(interpolator.getInterpolation(value));
         }
       }
+
+      @Override public void onDrawerClosed(View drawerView) {
+        if (mSetting != null) {
+          mSetting.setClickable(false);
+        }
+      }
+
+      @Override public void onDrawerOpened(View drawerView) {
+        if (mSetting != null) {
+          mSetting.setClickable(true);
+        }
+      }
     };
 
     mDrawer.setDrawerListener(mDrawerListener);
