@@ -15,7 +15,7 @@
   -->
 
 <resources>
-  <string name="app_name">IOまで</string>
+  <string name="app_name">IO When</string>
 
   <string name="io_event_date">2016-05-18T09:30:00-07:00</string>
 </resources>
