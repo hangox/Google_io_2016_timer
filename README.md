@@ -14,13 +14,7 @@ Downloadable from here
 
 Donateable from here
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-  <input type="hidden" name="cmd" value="_donations">
-  <input type="hidden" name="business" value="GEQ9RVMLB79MA">
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-    border="0" name="submit"
-    alt="PayPal - The safer, easier way to pay online!">
-</form>
+![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GEQ9RVMLB79MA)
 
 ## IO When in action
 
