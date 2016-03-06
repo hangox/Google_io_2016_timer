@@ -6,11 +6,9 @@ Featuring funny animation, just like (and close to) the event homepage.
 
 ## TL, DR
 
-> See [events.google.com/io2016](events.google.com/io2016)
+> See [events.google.com/io2016](events.google.com/io2016) then see this repo's screen cap.
 
-Downloadable from here
-
-<a href=""><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="200px"/></a>
+> **NOTE**: this Application was suspended by Play Store by violating ***'the impersonation policy'***. I have no time as well as no will to fix it again. So please use this as your own risk, but don't publish it to store again.
 
 ## IO When in action
 
