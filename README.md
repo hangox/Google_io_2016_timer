@@ -6,7 +6,7 @@ Featuring funny animation, just like (and close to) the event homepage.
 
 ## TL, DR
 
-> See [events.google.com/io2016](events.google.com/io2016) then see this repo's screen cap.
+> See [https://events.google.com/io2016/](https://events.google.com/io2016/) then see this repo's screen cap.
 
 > **NOTE**: this Application was suspended by Play Store by violating ***'the impersonation policy'***. I have no time as well as no will to fix it again. So please use this as your own risk, but don't publish it to store again.
 
