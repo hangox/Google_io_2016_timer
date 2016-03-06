@@ -35,6 +35,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_above="@id/divider"
+      android:gravity="center"
       android:orientation="horizontal"
       >
 
@@ -137,6 +138,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_below="@id/divider"
+      android:gravity="center"
       android:orientation="horizontal"
       >
 
