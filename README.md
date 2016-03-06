@@ -14,6 +14,12 @@ Featuring funny animation, just like (and close to) the event homepage.
 
 <img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/screen_record.gif?token=ABsaZq7z-Y88972vpgS6YKK-2J2rsFjtks5W5El9wA%3D%3D" width="320">
 
+## How to get the apk up and running
+
+- Fork, clone this then import it into Android Studio 2.0 beta 6 (I developed this on AS 2.0).
+- Connect your device, then from terminal, run ```./gradlew installDebug```
+- Check your device. The app should be ready to use.
+
 ## Use this code base, contribute
 
 - Rename ```gradle.properties-sample``` to ```gradle.properties```.
