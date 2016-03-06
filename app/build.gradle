@@ -49,10 +49,10 @@ android {
 
   signingConfigs {
     release {
-      keyAlias prodKeyAlias
-      keyPassword prodKeyPassword
-      storeFile file(prodStoreFile)
-      storePassword prodStorePassword
+      keyAlias io_prodKeyAlias
+      keyPassword io_prodKeyPassword
+      storeFile file(io_prodStoreFile)
+      storePassword io_prodStorePassword
     }
 
     debug {
