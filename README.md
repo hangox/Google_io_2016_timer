@@ -12,7 +12,7 @@ Featuring funny animation, just like (and close to) the event homepage.
 
 ## IO When in action
 
-<img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/screen_record.gif?token=ABsaZq7z-Y88972vpgS6YKK-2J2rsFjtks5W5El9wA%3D%3D" width="320">
+<img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/screen_record.gif?token=ABsaZq7z-Y88972vpgS6YKK-2J2rsFjtks5W5El9wA%3D%3D" width="512">
 
 ## How to get the apk up and running
 
