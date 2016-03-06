@@ -19,7 +19,7 @@
 fabric_api_key = FABRIC_KEY
 
 # Android Keystore
-prodKeyAlias = alias
-prodKeyPassword = alias_pass
-prodStoreFile = file_path
-prodStorePassword = key_pass
+io_prodKeyAlias = alias
+io_prodKeyPassword = alias_pass
+io_prodStoreFile = key_path
+io_prodStorePassword = key_pass
