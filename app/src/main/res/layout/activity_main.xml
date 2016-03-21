@@ -36,7 +36,7 @@
         android:layout_width="@dimen/drawer_expand_size"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="?attr/colorControlHighlight"
+        android:background="?attr/sidebarBackground"
         android:orientation="vertical"
         >
 
@@ -52,28 +52,80 @@
           style="@style/Widget.AppCompat.Button.Borderless"
           />
 
-      <im.ene.lab.io_timer.ui.widget.ForegroundLinearLayout
-          android:id="@+id/settings"
+      <RelativeLayout
+          android:id="@+id/extra_container"
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_height="48dp"
           android:layout_alignParentBottom="true"
-          android:clickable="true"
-          android:focusable="true"
-          android:foreground="?attr/selectableItemBackground"
-          android:gravity="center_vertical"
-          android:minHeight="48dp"
-          android:orientation="vertical"
-          android:padding="@dimen/activity_vertical_margin"
           >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Event website"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        <im.ene.lab.io_timer.ui.widget.ForegroundLinearLayout
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Credits"
+              android:textAppearance="@style/TextAppearance.AppCompat.Button"
+              />
+
+        </im.ene.lab.io_timer.ui.widget.ForegroundLinearLayout>
+
+        <android.support.v4.widget.Space
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/credits"
+            android:layout_toStartOf="@id/credits"
             />
 
-      </im.ene.lab.io_timer.ui.widget.ForegroundLinearLayout>
+        <im.ene.lab.io_timer.ui.widget.ForegroundLinearLayout
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/divider"
+            android:layout_toStartOf="@id/divider"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Event website"
+              android:textAppearance="@style/TextAppearance.AppCompat.Button"
+              />
+
+        </im.ene.lab.io_timer.ui.widget.ForegroundLinearLayout>
+      </RelativeLayout>
+
+      <android.support.v7.widget.AppCompatImageView
+          android:id="@+id/io_animation"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@id/extra_container"
+          android:adjustViewBounds="true"
+          app:srcCompat="@drawable/io_2_drawable_avd_hash_9016"
+          />
     </RelativeLayout>
 
     <include
