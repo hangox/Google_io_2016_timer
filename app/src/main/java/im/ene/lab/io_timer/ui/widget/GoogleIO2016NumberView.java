@@ -89,11 +89,17 @@ public class GoogleIO2016NumberView extends AppCompatImageButton {
   private TypeEvaluator evaluator;
   private ValueAnimator animator;
 
+  /**
+   * Run animation to transform current value to next value
+   *
+   * @param number : value to transform to.
+   */
   public void animateTo(final Number number) {
     if (number == mNumber) {
       return;
     }
 
+    // obtain new aligned pair of path value
     Pair<String, String> pathValues = Number.alignNumbers(new Pair<>(mNumber, number));
     nodesFrom = PathParser.createNodesFromPathData(pathValues.first);
     nodesTo = PathParser.createNodesFromPathData(pathValues.second);

@@ -83,7 +83,7 @@ public final class NumberDrawer {
     c.save();
     p.setColor(Color.argb(0, 0, 0, 0));
     ps.setColor(strokeColor);
-    ps.setStrokeWidth(4.0f * od);
+    ps.setStrokeWidth(5.0f * od);
     ps.setStrokeJoin(Paint.Join.ROUND);
     t.reset();
 
@@ -105,7 +105,7 @@ public final class NumberDrawer {
     r(3, 2, 0, 1);
     p.setColor(Color.argb(0, 0, 0, 0));
     ps.setColor(Color.parseColor("#e35444"));
-    ps.setStrokeWidth(4.0f * od);
+    ps.setStrokeWidth(5.0f * od);
     ps.setStrokeJoin(Paint.Join.ROUND);
     c.restore();
     r();

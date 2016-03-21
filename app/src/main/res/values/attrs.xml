@@ -16,6 +16,8 @@
 
 <resources>
 
+  <attr format="color" name="sidebarBackground"/>
+
   <declare-styleable name="GoogleIO2016NumberView">
     <attr format="enum" name="value">
       <enum name="zero" value="0"/>

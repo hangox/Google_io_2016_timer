@@ -17,11 +17,15 @@
 package im.ene.lab.io_timer.ui;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimatedVectorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
+import android.support.v7.widget.AppCompatImageView;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Interpolator;
@@ -49,8 +53,12 @@ import rx.schedulers.Schedulers;
 public class MainActivity extends AppCompatActivity {
 
   @Bind(R.id.logo) ImageView mLogo;
+  @Bind(R.id.io_animation) AppCompatImageView mCrafty;  // in the name of the creator
+  private AnimatedVectorDrawable mCraftyDrawable;
+  // sounds weird :3 please tell me to change if need
   @Bind(R.id.side_logo) ImageView mHeader;
   @Bind(R.id.drawer) MiniDrawerLayout mDrawer;
+  @Bind(R.id.extra_container) View mExtraViews;
   @Bind(R.id.settings) ForegroundLinearLayout mSetting;
 
   @OnClick(R.id.side_logo) void openCloseDrawer() {
@@ -68,6 +76,13 @@ public class MainActivity extends AppCompatActivity {
     Intent intent = new Intent(Intent.ACTION_VIEW);
     intent.setData(Uri.parse(url));
     startActivity(intent);
+  }
+
+  @OnClick(R.id.credits) void openCredits() {
+    new AlertDialog.Builder(this).setTitle("About resources used in IO When")
+        .setView(R.layout.credits_container)
+        .create()
+        .show();
   }
 
   @Bind({
@@ -88,10 +103,20 @@ public class MainActivity extends AppCompatActivity {
 
   private final Interpolator interpolator = new AccelerateInterpolator();
 
+  static {
+    // This is my expected mode in the future, so skip it for now.
+    // AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO);
+  }
+
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
+
+    // get AnimatedVectorDrawable
+    mCraftyDrawable = (AnimatedVectorDrawable) mCrafty.getDrawable();
+
     // Update date time then update UI.
     mEventSecond = ZonedDateTime.parse(getString(R.string.io_event_date)).toEpochSecond();
 
@@ -107,10 +132,15 @@ public class MainActivity extends AppCompatActivity {
         if (mHeader != null) {
           ViewCompat.setScaleX(mHeader, scale);
           ViewCompat.setScaleY(mHeader, scale);
+          mHeader.setAlpha(1 - scale);
         }
 
-        if (mSetting != null) {
-          mSetting.setAlpha(interpolator.getInterpolation(value));
+        if (mCrafty != null) {
+          mCrafty.setAlpha(value);
+        }
+
+        if (mExtraViews != null) {
+          mExtraViews.setAlpha(interpolator.getInterpolation(value));
         }
       }
 
@@ -118,11 +148,19 @@ public class MainActivity extends AppCompatActivity {
         if (mSetting != null) {
           mSetting.setClickable(false);
         }
+
+        if (mCraftyDrawable != null && !mCraftyDrawable.isRunning()) {
+          mCraftyDrawable.stop();
+        }
       }
 
       @Override public void onDrawerOpened(View drawerView) {
         if (mSetting != null) {
           mSetting.setClickable(true);
+        }
+
+        if (mCraftyDrawable != null && !mCraftyDrawable.isRunning()) {
+          mCraftyDrawable.start();
         }
       }
     };
