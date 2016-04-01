@@ -34,6 +34,7 @@ Featuring funny animation, just like (and close to) the event homepage.
 - [butterknife](jakewharton.github.io/butterknife/)
 - [vectalign](https://github.com/bonnyfone/vectalign)
 - [svgtoandroid](https://codecrafted.net/svgtoandroid)
+- animated io 2016 from [Nick Butcher'gist](https://gist.github.com/eneim/775be95fe9baca673fab)
 
 ## LICENSE
 
