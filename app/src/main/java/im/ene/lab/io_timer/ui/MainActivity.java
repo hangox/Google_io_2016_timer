@@ -54,8 +54,12 @@ public class MainActivity extends AppCompatActivity {
 
   @Bind(R.id.logo) ImageView mLogo;
   @Bind(R.id.io_animation) AppCompatImageView mCrafty;  // in the name of the creator
+
+  /**
+   * This is either AnimatedVectorDrawable (on Lollipop and up) or AnimatedVectorDrawableCompat, but
+   * I just care of it as a Animatable implementation.
+   */
   private Animatable mCraftyDrawable;
-  // sounds weird :3 please tell me to change if need
   @Bind(R.id.side_logo) ImageView mHeader;
   @Bind(R.id.drawer) MiniDrawerLayout mDrawer;
   @Bind(R.id.extra_container) View mExtraViews;
