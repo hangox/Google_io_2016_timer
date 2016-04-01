@@ -6,15 +6,19 @@ Featuring funny animation, just like (and close to) the event homepage.
 
 ## TL, DR
 
-> See [events.google.com/io2016](events.google.com/io2016)
+> See [https://events.google.com/io2016/](https://events.google.com/io2016/) then see this repo's screen cap.
 
-Downloadable from here
-
-<a href=""><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="200px"/></a>
+> **NOTE**: this Application was suspended by Play Store by violating ***'the impersonation policy'***. I have no time as well as no will to fix it again. So please use this as your own risk, but don't publish it to store again.
 
 ## IO When in action
 
-<img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/screen_record.gif?token=ABsaZq7z-Y88972vpgS6YKK-2J2rsFjtks5W5El9wA%3D%3D" width="320">
+<img src="https://raw.githubusercontent.com/eneim/Google_io_2016_timer/master/art/screen_record.gif?token=ABsaZq7z-Y88972vpgS6YKK-2J2rsFjtks5W5El9wA%3D%3D" width="512">
+
+## How to get the apk up and running
+
+- Fork, clone this then import it into Android Studio 2.0 beta 6 (I developed this on AS 2.0).
+- Connect your device, then from terminal, run ```./gradlew installDebug```
+- Check your device. The app should be ready to use.
 
 ## Use this code base, contribute
 

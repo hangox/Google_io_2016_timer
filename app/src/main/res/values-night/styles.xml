@@ -15,10 +15,20 @@
   -->
 
 <resources>
-  <string name="app_name">IO When</string>
 
-  <string name="io_event_date">2016-05-18T09:30:00-07:00</string>
-  <string name="credit_io_numbers">Vector source (SVG data) for numbers were extracted from Google IO event website.</string>
-  <string name="credit_svg_java_helper">Vector source (SVG data) was converted to Java helper class (NumberDrawer in this App) by https://codecrafted.net/svgtoandroid (with my manipulation later) to give support for lower Android versions.</string>
-  <string name="credit_sidebar_animation">Sidebar animations was created by Nick Butcher (@crafty).</string>
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+    <!-- Customize your theme here. -->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <item name="android:textColorPrimary">@color/colorPrimary</item>
+    <item name="sidebarBackground">#3e3639</item>
+  </style>
+
+  <style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
 </resources>
