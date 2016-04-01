@@ -17,7 +17,7 @@
 package im.ene.lab.io_timer.ui;
 
 import android.content.Intent;
-import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Animatable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
   @Bind(R.id.logo) ImageView mLogo;
   @Bind(R.id.io_animation) AppCompatImageView mCrafty;  // in the name of the creator
-  private AnimatedVectorDrawable mCraftyDrawable;
+  private Animatable mCraftyDrawable;
   // sounds weird :3 please tell me to change if need
   @Bind(R.id.side_logo) ImageView mHeader;
   @Bind(R.id.drawer) MiniDrawerLayout mDrawer;
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     ButterKnife.bind(this);
 
     // get AnimatedVectorDrawable
-    mCraftyDrawable = (AnimatedVectorDrawable) mCrafty.getDrawable();
+    mCraftyDrawable = (Animatable) mCrafty.getDrawable();
 
     // Update date time then update UI.
     mEventSecond = ZonedDateTime.parse(getString(R.string.io_event_date)).toEpochSecond();
