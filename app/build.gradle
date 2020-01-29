@@ -64,12 +64,11 @@ android {
 
   defaultConfig {
     applicationId "im.ene.lab.io_timer"
-    minSdkVersion 16
-    targetSdkVersion 23
-    versionCode dateTimeInt()
-    versionName dateTimeString()
-    archivesBaseName = "io_timer-${versionName}"
-//    manifestPlaceholders = [fabric_api_key: "${fabric_api_key}"]
+    minSdkVersion 21
+    targetSdkVersion 29
+    versionCode 1
+    versionName "1.0.0"
+    archivesBaseName = "io_timer"
 
     vectorDrawables.useSupportLibrary = true
   }
